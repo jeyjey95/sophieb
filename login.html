@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang = "fr">
 <head>
-	<meta charset="UTF-8">
+	<meta charset = "UTF-8">
 	<title>Sophie Bluel - Architecte d'intérieur</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
-	<meta name="description" content="">
-	<link rel="stylesheet" href="./assets/style.css">
-	<script defer src="login.js"></script>
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel = "preconnect" href = "https://fonts.googleapis.com">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+	<link href = "https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel = "stylesheet">
+	<meta name = "description" content = "">
+	<link rel = "stylesheet" href = "./assets/style.css">
+	<script defer src = "login.js"></script>
 </head>
 <body>
 <header>
@@ -18,25 +18,24 @@
 		<ul>
 			<li>projets</li>
 			<li>contact</li>
-			<li id="btnlogin">login</li>
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+			<li id = "btnlogin">login</li>
+			<li><img class = "logoInsta" src = "./assets/icons/instagram.png" alt = "Instagram"></li>
 		</ul>
 	</nav>
 </header>
 
 <main>
-    <section id="contact">
+    <section id = "contact">
+		<div id = "loginIncorrecte">Identification incorrect</div>
         <h2>Log In</h2>
-
-        
-        <form id="formLogin">
-            <label for="mail">E-mail</label>
-            <input id="mail" name="mail" type="text" title="identifiant">
-            <label for="password">Mot de passe</label>
-            <input id="password" name="password" type="password" title="password">
-			<button class="validate" type="submit">Se connecter</button>
+        <form id = "formLogin">
+            <label for = "mail">E-mail</label>
+            <input id = "mail" name = "mail" type = "text" title = "identifiant">
+            <label for = "password">Mot de passe</label>
+            <input id = "password" name = "password" type = "password" title = "password">
+			<button id = "btnVallogin" class = "validate" type = "submit">Se connecter</button>
         </form>
-        <a href="#">Mot de passe oublié</a>
+        <a href = "">Mot de passe oublié</a>
     </section>
 
 </main>
