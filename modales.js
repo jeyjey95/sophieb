@@ -158,7 +158,6 @@ document.getElementById("formNewPic").addEventListener('change',function(e){
 document.getElementById("btnValiderAjout").addEventListener('click',function(e){
     e.preventDefault();
 
-    //console.log("btn ajout");
     let titreElm = document.forms["formNewPic"].elements.titre;
     let catElm = document.forms["formNewPic"].elements.cat;
     let fileElm = document.forms["formNewPic"].elements["newImg"];
