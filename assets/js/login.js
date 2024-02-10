@@ -14,7 +14,7 @@ document.querySelector("#formLogin").addEventListener("submit", function (event)
         // Création de la charge utile au format JSON
         let chargeUtile = JSON.stringify(credential);
 
-        console.log(chargeUtile);
+        //console.log(chargeUtile);
 
         let response = await fetch("http://localhost:5678/api/users/login/", {
             method: "POST",
@@ -23,7 +23,7 @@ document.querySelector("#formLogin").addEventListener("submit", function (event)
         });
 
         let data = await response.json();
-        console.log(data);
+        //console.log(data);
         if (data.userId) {
             console.log("setItem");
             localStorage.setItem("userId", data.userId);
