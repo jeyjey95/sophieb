@@ -20,6 +20,8 @@ document.getElementById("btnAjout").addEventListener("click", function() {
         document.forms["formNewPic"].cat.removeChild(idOption);
 
     document.getElementById("messEerrorFile").style.display="none";
+    document.getElementById("conteneurPreview").style.display="none";
+    document.getElementById('conteneurClickPreview').style.display="flex";
     document.getElementById('dialAjout').showModal();
 });
 
