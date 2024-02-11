@@ -20,7 +20,9 @@ document.getElementById("btnAjout").addEventListener("click", function() {
         document.forms["formNewPic"].cat.removeChild(idOption);
 
     document.getElementById("messEerrorFile").style.display="none";
-    document.getElementById("conteneurPreview").style.display="none";
+    if(document.getElementById("imgPrev"))
+        document.getElementById("imgPrev").remove();
+    document.getElementById('conteneurPreview').style.display="none";
     document.getElementById('conteneurClickPreview').style.display="flex";
     document.getElementById('dialAjout').showModal();
 });
@@ -129,6 +131,8 @@ document.getElementById('newImg').addEventListener('change', function(e){
         let eltPreview = document.createElement("img");
         eltPreview.src = result;
         eltPreview.alt = "Image de prévisualisation";
+        eltPreview.setAttribute("id","imgPrev");
+
         eltPreview.style.maxHeight="169px";
 
         document.getElementById('conteneurClickPreview').style.display="none";
@@ -220,8 +224,8 @@ async function ajoutTravaux(formattedFormData) {
         document.forms["formNewPic"].reset();
         document.querySelector("#portfolio .gallery").innerHTML = "";
         getTravaux();
-        document.getElementById('conteneurClickPreview').style.display = "flex";
-        document.getElementById('conteneurPreview').style.display = "none";
+        //document.getElementById('conteneurClickPreview').style.display = "flex";
+        //document.getElementById('conteneurPreview').style.display = "none";
         document.getElementById('dialAjout').close();
     }
 }
